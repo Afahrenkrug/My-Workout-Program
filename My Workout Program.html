@@ -1,0 +1,56 @@
+<!doctype.html>
+<!--Reference the stylesheet-->
+<link rel="stylesheet" href="My Workout Program.css">
+<!--Reference the javascript file-->
+<script src="script.js"></script>
+<!--Set the background color by referencing the stylesheet-->
+<body class="background-color">
+<!--Set the title of the website to appear on the tab-->
+<title>Workout Program 2022</title>
+<!--Begin the main portion of the code-->
+<main>
+<!--Introduce the header and the start of workout listings-->
+  <h1 class="header-text gray-background">Workout Program for 2022</h1>
+<p class="gray-background bold-text">Here are all the workout types that can be completed:</p>
+<!--Create a bulleted list, which lists the following list items-->
+  <ul class="white-text gray-background">
+    <li>Circuit Training</li>
+    <li>Run</li>
+    <li>Weight Training</li>
+    <li>Calisthenics</li>
+    <li>Core Training</li>
+  </ul>
+<!--Introduce the video portion of the website-->
+<p class= "gray-background bold-text">Below are some videos of guided workouts:</p>
+<!--Create a second bulleted list, which references the following videos and anchors the link into the anchor portion of the text-->
+<ul class="white-text gray-background">
+  <li><a href="https://www.youtube.com/watch?v=9p7-YC91Q74">10 Minute Ab Workout</a> (10 Minutes)</li>
+  <li><a href="https://www.youtube.com/watch?v=nhzI5m-tBdY">Warm Up for Leg Day</a> (5 Minutes)</li>
+</ul>
+</body>
+<main>
+<!--Introduces the time calculator for workouts-->
+    <body>
+        <p class="bold-text gray-background">Input your two workouts and click the button to determine the total workout time:</p>
+        <p class="bold-text gray-background">Enter Workout 1 time:</p>
+<!--Create a user input box for text-->
+        <input type="text" id="txt1" name="text1">
+        <p class="bold-text gray-background">Enter Workout 2 time:</p>
+        <input type="text" id="txt2" name="text2">
+        <p class="gray-background bold-text">Your total workout time is:</p>
+        <p class="white-text" id="total"></p>
+<!--Create a button that, when clicked, will trigger the java function-->
+        <button onclick="myFunction()">Try it</button>
+<!--Start of the java script section of the website-->
+        <script>
+//starts by defining the function, which will get each of the elements that the user inputed into the user input box
+            function myFunction() {
+                var y = document.getElementById("txt1").value;
+                var z = document.getElementById("txt2").value;
+//Adds up each of the variables that the user inputs and proceeds to add the word minutes after it.
+                var x = +y + +z + " Minutes";
+//print out the total amount, which is defined by the sum of variables y and z and the word minutes to follow
+                document.getElementById("total").innerHTML = x;
+            }
+        </script>
+    </body>

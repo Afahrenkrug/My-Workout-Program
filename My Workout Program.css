@@ -1,0 +1,21 @@
+.gray-background{
+  background-color: gray;
+}
+
+.white-text{
+  color: white;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.header-text{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+.background-color{
+  background-color: #9B6256;
+}
